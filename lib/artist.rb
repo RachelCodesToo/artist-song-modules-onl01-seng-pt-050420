@@ -12,6 +12,11 @@ class Artist
   attr_reader :songs
 
   @@artists = []
+  
+  def initialize
+    super
+    @songs = []
+  end 
 
   def self.all
     @@artists
